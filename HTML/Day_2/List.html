@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+<body>
+    <h1>List in HTML</h1>
+    <h2>Unordered list</h2>
+    <!-- Types of Lists:
+    1)Unordered list(using <ul></ul> tag) eg.,circle bullet points or square bullet pullet points
+    2)Ordered List(using <ol></ol> tag) eg.,1,2,3,4, A,B,C,D a,b,c,d, I,II,III ,6,7,8(start from particular specified number using "start attribute") etc.. -->
+    <ul>
+        <!-- each point in the list must be created using <li></li> tag -->
+         <li>Coffee</li>
+            <ul>
+                <li>Filter Coffee</li>
+                   <ul>
+                      <li>List-1</li>
+                        <ul>
+                            <li>jhcgn</li>
+                        </ul>
+
+                   </ul>
+            </ul>
+         <!-- "type attribute" used to represent the bullets shapes as we want -->
+         <li>Milk</li>
+         <li>Tea</li>
+    </ul>
+
+    <h2>Unordered list customized using attributes</h2>
+    <ul type="square">
+        <!-- each point in the list must be created using <li></li> tag -->
+         <li>Coffee</li>
+            <ul type="square">
+                <li>Filter Coffee</li>
+                   <ul>
+                      <li>List-1</li>
+                        <ul>
+                            <li>jhcgn</li>
+                        </ul>
+
+                   </ul>
+            </ul>
+         <!-- "type attribute" used to represent the bullets shapes as we want -->
+         <li>Milk</li>
+         <li>Tea</li>
+    </ul>
+
+    <h2>Ordered list</h2>
+    <Ol>
+        <li>lemon juice</li>
+        <ol>
+            <li>cold lemon juice</li>
+            <li>normal lemon juice</li>
+            <li>sweet lemon juice</li>
+        </ol>
+        <li>grape juice</li>
+        <li>Mango juice</li>
+    </Ol>
+
+    <h2>Ordered list customized using attributes</h2>
+    <ol type="A">
+        <li>lemon juice</li>
+        <ol start="5" type="I">
+            <li>cold lemon juice</li>
+            <li>normal lemon juice</li>
+            <li>sweet lemon juice</li>
+        </ol>
+        <li>grape juice</li>
+        <li>Mango juice</li>
+    </ol>
+</body>
+</html>

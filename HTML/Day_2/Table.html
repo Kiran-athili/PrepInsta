@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Table tag</title>
+
+    <!-- "Style tag" used to add thick border,bacground colour,colour,etc.. in the table or website using attributes(it can also be learn in CSS) -->
+    <style>
+        table,td,th{
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table in HTML</h1>
+    
+    <!-- "Table tag" used to create table sin website -->
+    <table border="2">
+        
+        <!-- "Caption tag" used to give heading name to the table -->
+        <caption>Avengers Team Marks</caption>
+        
+        <!-- "Table header tag" used to represent this part is at the top of the table -->
+        <thead>
+        <!-- "table row tag" used to crate rows in a table -->
+        <tr>
+             <!-- "table data or column tag" used to create data inside columns of each row in a table and "<b> tag" is bold tag used to represent in bold charcters -->
+            <td><b>Name</b></th>
+            <!-- "table heading tag" used to create bold data inside columns of each row in a table -->
+            <th>UID</th>
+            <th>Course Name</th>
+            <th>Marks</th>
+            <th>Contact</th>
+        </thead>
+
+        <!-- "Table body tag" used to represent this part is at the body(below the top) of the table -->
+        <tbody>
+        </tr>
+        <tr>
+            <!-- "table data or column tag" used to create data inside columns of each row in a table -->
+            <td>Peter Parker</td>
+            <td>48</td>
+            <!-- "style attribute" used to add background color,etc to particular column or row -->
+            <td style="background-color: brown;">Spider Man</td>
+            <td>100</td>
+            <td>spiderman@avengers.com</td>
+        </tr>
+        <tr>
+            <td>Batman</td>
+            <td>70</td>
+            <td>Save the City</td>
+            <td>99</td>
+            <td>batman@avengers.com</td>
+        </tr>
+        <tr>
+            <td>Tony Stark</td>
+            <td>19</td>
+            <td>Iron Man</td>
+            <td>100</td>
+            <td>ironman@avengers.com</td>
+        </tr>
+        <tr>
+            <td>Stephan Strange</td>
+            <td>14</td>
+            <td>Sorcerer</td>
+            <!-- "rowspan attribute" used to merge to rows by sepecifying no of following rows -->
+            <td rowspan="2">99</td>
+            <td>drstrange@avengers.com</td>
+        </tr>
+        <tr>
+            <td>Bruce Banner</td>
+            <td>19</td>
+            <td>Hulk</td>
+            <!-- <td>100</td> -->
+            <td>hulk@avengers.com</td>
+        </tr>
+        <tr>
+            <td>Thor Odinson</td>
+            <td>19</td>
+            <td>God of Thunder</td>
+            <td>100</td>
+            <td>thor@avengers.com</td>
+        </tr>
+        </tbody>
+
+        <!-- "Table footer tag" used to represent this part is at the bottom(below the body) of the table -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Marks</td>
+                <td>597</td>
+            </tr>
+        </tfoot>
+
+     </table>
+
+</body>
+</html>
