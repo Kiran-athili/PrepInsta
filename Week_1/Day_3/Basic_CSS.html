@@ -1,0 +1,76 @@
+<!-- CSS stands for "Cascading Style Sheets"
+"Cascading" means algorithm used to style the sheets -->
+<!-- Types of CSS:
+       1)Inline CSS (using style attribute in any tag)
+       2)Internal CSS(using style tag)
+       3)External CSS(styling is done in seperate css file and link it with current html file using link tag)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- "Internal CSS" using style tag and selectors(tag name,id name,class name,group,body tag,html tag, * ,root) specified in it -->
+     <style>
+        /* "selectors" means particular tags,id,etc.. mentioned inside style tag for styling the content created inside the tags and styling applies for whole file */
+        div{
+            background-color: palevioletred ;
+        }
+
+        /* "rgb(value_1,value_2,value_3)" is used to help us to give our desired color and value range is "0-255" */
+        p{
+            background-color: rgb(8, 115, 115);
+        }
+
+        /* styling using "#id name",id is used to represent uniqueness(it means we should apply something only for "one particular element") */
+        /* " # " is used to represent the name is id */
+        #para_3{
+            color: white;
+            background-color: rgb(111, 111, 15);
+        }
+        
+        /* "class" is also like "id" but it can apply for multiple particular elements using "class name"  */
+        .para_class{
+            color: yellow;
+        }
+        
+        /* "*" is used for styling all elements of body of the webpage
+        *{
+            background-color: lightblue;
+        } 
+
+        "body" is used for styling between all elements of body of the webpage 
+        body{
+            background-color: lightgreen;
+        } 
+
+        "html" is used for styling all the background of the webpage 
+        html{
+            background-color: lightcoral;
+        }
+
+        root{ 
+        --pink: #4563e7
+        }
+        */
+     </style>
+
+     <!-- External CSS(styling is done in "seperate css file" and link it with current html file using "link tag")-->
+     <link rel="stylesheet" href="./Basic_CSS.css">
+    
+</head>
+<body>
+    <h1>CSS</h1>
+    <!-- "Inline CSS" using style attribute in any tag -->
+    <p style="background-color: red; color: white;">This is paragraph</p>
+    <div>This is division</div>
+    <P>this is paragraph 1</P>
+    <p>this is paragraph 2</p>
+    <p id="para_3">this is paragraph 3</p>
+    <!-- "class" is also like "id" but it can apply for multiple particular elements using "class name" -->
+    <p class="para_class">this is paragraph 4</p>
+    <p class="para_class">this is paragraph 5</p>
+    <div class="para_class">this is division</div>
+</body>
+</html>
