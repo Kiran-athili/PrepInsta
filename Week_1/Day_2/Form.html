@@ -9,7 +9,15 @@
 
 <body>
     <h1>Form in HTML</h1>
+    <!-- "form tag" is used to create forms which are helpful to know information about the user and also for creating MCQ's ,"action attribute" in form tag are used to takes the user to their required destination webpage or website after clicking submit button at end of the form   -->
+    <!-- "Submit" button used to submit the form and takes you to another website or webpage using "action attribute" in form tag -->
+    <!-- when you type "./" in action attribute,it takes you the files in current child folder and for "../" takes you files in parent folders -->
     <form action="./List.html">
+        <!-- It is always recommended to use "label tag  and for attribute" with "input tag with id attribute" by proving same id names for attribute values because this is used to recognize that the given input is related that labeled name and it is important to store data correctly for backend -->
+        <!-- "input tag" is used to take inputs of different types by specifying the type of input(eg.,text,password,number,etc..) in "type attribute" in input tag -->
+        <!-- "id name"should be used for only one specific tag(different content tags must contain different id names) otherwise use "class" for multiple tags -->
+        <!-- "required attribute" is used to specifies the user that this required to fill -->
+        <!-- "placeholder attribute" is used to specifies the user how to fill the data inside boxes of form by giving default content inside the boxes -->
         <label for="fname">First Name:</label><input type="text" id="fname" required placeholder="Enter First Name">
         <br><br>
         <label for="Mname">Middle Name:</label><input type="text" id="Mname" >
@@ -22,7 +30,9 @@
         <br><br>
         <label for="contact">Contact:</label><input type="number" id="contact" >
         <br><br>
-        <input type="submit" value="Open">
+         <!-- "Submit" button used to submit the form and takes you to another website or webpage using action attribute in form tag -->
+        <!-- "Value attribute" is used to change text inside any of the box and we can also set default value in box of form filling -->
+         <input type="submit" value="Open">
     </form>
     
 </body>

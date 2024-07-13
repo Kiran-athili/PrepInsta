@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rgb(85, 50, 226);
+            width: 200px;
+        }
+
+        /* for horizontal nav bar */
+        ul{
+            height: 100vh;
+            color: white;
+            
+            /* "display: flex;" always applies on its children,it is also used to make all list items arrange in the same row when we apply on any tag(parent tag)*/
+            display: flex;
+            /* now,direction of navbar is will change from row to column direction using "flex-direction: column;" property */
+            flex-direction: column;
+             /* "list-style-type:none" attribute makes the list style has no bullet points */
+            list-style-type: none;
+            /* "align-items: center;" is the property of flex,it is used to the content at the "center of the horizontal position" of its box  */
+            align-items: center;
+            /* "justify-content:;" is the property of flex,it is used to put the content at the "center of the vertical position" from its current position of its box */
+            justify-content: space-evenly;
+            /* we can also give "space-between" for in between space,"space-around" for space around  */
+
+        }
+        /* " * " will apply on all the body tag elements */
+        *{
+            /* we reducing space between body and webpage */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- "nav tag" is like div tag ,it used for understandable,readability of the code,for better look of the code -->
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Login</li>
+                <li>SignUp</li>
+            </ul>
+        </div>
+    </nav>
+    
+</body>
+</html>
+<!-- 
+using "postion" in HTML,CSS we can make navbar visible on all webpages.
+In react, we use "router" concept for fixed navbar position.  
+-->

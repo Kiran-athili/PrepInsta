@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position:absolute;
+        }
+        .card_1{
+            width: 500px;
+            height: 300px;
+            background-color: lightgreen;
+        }
+        .card_2{
+            width: 400px;
+            height: 500px;
+            background-color: lightsalmon;
+            /* "z-index: value;" is used to give preference of appereance at top,higher the positive value means higher the preference */
+            z-index: 3;
+        }
+        .card_3{
+            width: 200px;
+            height: 600px;
+            background-color:lightblue;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-Index</h1>
+    <div class="card_1"></div>
+    <div class="card_2"></div>
+    <div class="card_3"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 500px;
+            height: 300px;
+            background-color: lightcoral;
+        }
+        .child{
+            /* "percentage units" are used to percentage of the width of the parent to the current tag */
+            width: 60%;
+            /* "vw", "vh" are viewport width and viewport height are used to occupy entire width,height of the webpage */
+            height: 100vh;
+            background-color: lightblue;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Units in CSS</h1>
+    <div class="parent">
+        <p class="child"></p>
+    </div>
+</body>
+</html>

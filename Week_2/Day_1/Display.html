@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .display_parent{
+            /* "display: inline;" attribute is used to make block element to look like inline element */
+             /* display: inline; */
+             display: inline-block;
+             width: 500px;
+             height: 200px;
+             background-color: lightseagreen;
+        }
+        .span_tag{
+             /* "display: inline-block;" attribute is the combination of inline and block.it is not used to take given entire like inline but it is used to take given width,height like block element*/
+            display: inline-block;
+            /* we can't increase the height,width of the inline elements because they take height,width of the previously mentioned tags */
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            /* if you want to behave like block elements we should mention "display: block;" */
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Display in CSS</h1>
+    <div class="display_parent">
+        This is div
+    </div>
+    <span class="span_tag">this is span tag</span>
+    <span>thkdhhj</span>
+    
+</body>
+</html>

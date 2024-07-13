@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box model</title>
+    <style>
+        h2{
+            background:pink;
+            /* "width" is used to give mentioned width to the specified tag elment otherwise the tag element will occupies complete width in the webpage */
+            width: 500px; 
+            /* Using tag name we apply "padding" on the content inside the tag */
+            /* below "padding" will apply one value on all sides(top,right,bottom,left) */
+            padding: 30px;
+            /* Types of padding:
+            "padding" at top-bottom right-left
+            padding: 30px 40px;
+            "padding" at top right bottom left=right
+            padding: 30px 40px 50px;
+            "padding" at top right bottom left
+            padding: 30px 40px 50px 60px;
+            "padding" at top
+            padding-top: 30px;
+            "padding" at right
+            padding-right: 40px;
+            padding-bottom: 50px;
+            padding-left: 60px; */
+
+            /* "border" is used to give border to the tag by specifying colour,style(solid/double/dashed/dotted) and pixels */
+            /* we can give border to any side by specifying  border-left ,etc.. */
+            border:blue solid 10px;
+
+            /* "margin" is used to give margin to the tag like between body tag and the content tag , beetween two content tags  */
+            /* we can give margin to any side by specifying  margin-left ,etc.. */
+            margin-left: 100px
+        }
+        #p1{
+            background-color: green;
+            color: white;
+            padding:50px;
+            border:black solid 10px;
+            margin-left:50px;
+
+        }
+        .i1{
+            background-color: lightblue;
+            margin-left:50px;
+            border:black solid 5px;
+            /* we can't give top,bottom padding and margin to inline elements perfectly. */
+        }
+        .i2{
+            background-color: blue;
+            color: white;
+            border:black solid 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- for "block-level elements" occupies complete width in webpage -->
+    <h2>This is h2 element</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est aut explicabo voluptate dolorum quo iste quidem recusandae repellat. Accusantium placeat rerum nihil sit eum debitis sapiente? Et, libero! Et, quaerat.</p>
+    <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est aut explicabo voluptate dolorum quo iste quidem recusandae repellat. Accusantium placeat rerum nihil sit eum debitis sapiente? Et, libero! Et, quaerat.</p>    
+    <!-- for "inline elements" occupies in the same line-->
+     <i class="i1">italic 1</i>
+     <i class="i2">italic 2</i>
+
+
+</body>
+</html>

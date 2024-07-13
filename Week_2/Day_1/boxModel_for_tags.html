@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div_demo{
+            width:500px;
+            height: 300px;
+            background-color: lightcoral;
+            /* "margin" always applies from its parent,below the parent of div tag is body tag */
+            /* margin:100px; */
+            /* "padding" always applies on its children,below the children of div tag is p tag */
+            padding: 100px;
+            border:10px solid  black;
+            /* "box-sizing:border-box;" is used to make adjust previous measurements(original size before applying padding,etc..) after  performing padding,border,margin, this is used to reduce complex structure in the webpage */
+            box-sizing:border-box;
+        }
+        p{
+            width: 200px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>box Model in CSS</h1>
+    <div class="div_demo">
+        <p class="div_child"></p>
+    </div>
+    
+</body>
+</html>

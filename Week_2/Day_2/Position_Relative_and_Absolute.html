@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{background-color: black;}
+        div .box{
+            width: 200px;
+            height: 200px;
+            
+            display: inline-block;
+        }
+        .box1{border: 2px solid red;}
+        .box2{border: 2px solid rgb(0, 255, 94);}
+        .box3{
+            border: 2px solid rgb(102, 0, 255);
+            /* "positoon: relative;" means it changes its position with respect to its current position */
+            position: relative;
+            top: 50px;
+            left: 60px;
+        }
+        .box4{border: 2px solid rgb(255, 0, 212);
+            
+             /* "positoon: absolute;" means it changes its position with respect to its current parent position (as div tag of class main).*/
+             position: absolute;
+            top: 50px;
+            left: 60px;
+       
+        }
+        .box5{
+            border: 1px solid rgb(200, 255, 0);
+            /* when "position:absolute;" is mentioned without top,left properties, the following child tags will overlap with each other.This concept can be useful and seen in google ads,apps,greeting cards, etc..  */
+            position:absolute;
+            
+            
+        }
+        .box6{
+            border:5px solid cyan;
+            /* position:absolute; */
+            }
+        .box7{
+            border: 5px solid grey;
+            }
+    </style>
+</head>
+<body>
+    
+    <!--
+     "Position" means where we are going to keep the element or tag.
+     Types of positions:
+     1)fixed
+     2)Static
+     3)sticky
+     4)relative
+     5)absolute
+      -->
+    <div class="main">
+        <!-- we can give more than 1 class names -->
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+        <div class="box5 box"></div>
+        <div class="box6 box"></div>
+        <div class="box7 box"></div>
+    </div>
+
+</body>
+</html>

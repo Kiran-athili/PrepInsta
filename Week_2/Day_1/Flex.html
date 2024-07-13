@@ -1,0 +1,59 @@
+
+<!-- the task is to put the content at the centre of its box -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* "text-align: center;" is used to put the content at the center of its width(horizontal) of its box but not at the exact center of the box */
+            /* "text-align: center;" */
+            /* "display: flex;" provides multiple properties to put at desired positions */
+            display: flex;
+            /* "align-items: center;" is the property of flex,it is used to the content at the "center of the vertical position" of its box  */
+            align-items: center;
+            /* "justify-content:;" is the property of flex,it is used to put the content at the "center of the horizontal position" from its current position of its box */
+            justify-content: center;
+        } 
+        div{
+            background-color: rgb(88, 165, 88);
+        }
+
+        /* for horizontal nav bar */
+        ul{
+            height: 70px;
+            
+            /* "display: flex;" always applies on its children,it is also used to make all list items arrange in the same row when we apply on any tag(parent tag)*/
+            display: flex;
+             /* "list-style-type:none" attribute makes the list style has no bullet points */
+            list-style-type: none;
+            align-items: center;
+            /*now,"justify-content: space around;" is the property of flex,it is used to put the content at the "center of the horizontal position" from its current position of its box  by habving "space  around them" using "space-around property" insteade of center property*/
+            justify-content: space-around;
+            /* we can also give "space-between" for in between space,"space evenly" for equal(even) space */
+
+        }
+    </style>
+</head>
+<body>
+    <p>this is p tag</p>
+    <!-- "nav tag" is like div tag ,it used for understandable,readability of the code,for better look of the code -->
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Login</li>
+                <li>SignUp</li>
+            </ul>
+        </div>
+    </nav>
+    
+</body>
+</html>
