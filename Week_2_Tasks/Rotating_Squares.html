@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .container {
+        height: 100%;
+		max-width:200px;
+        min-height:200px;
+        /* margin: 0 auto; */
+        margin: 300px 650px ;
+        /* margin-left: 650px; */
+	}
+	.square1,.square2,.square3,.square4 {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        display: inline-block;
+        justify-content: center;
+       align-items: center;
+        animation-duration: 2s;
+		animation-iteration-count:infinite;
+		animation-timing-function:linear;
+		animation-fill-mode: forwards;
+
+	}
+	.square1 {
+		animation-name: s1 ;
+		margin-left: 56px;
+	}
+	.square2 {
+		animation-name: s2;
+	}
+	.square3 {
+		position: relative;
+        top: 44px;
+        right: 44px;
+		animation-name: s3;
+	}
+	.square4 {
+		position: relative;
+        left: 56px;
+		animation-name: s4;
+	}
+	
+@keyframes s1{
+  0% {
+    background-color: #01a4ef;
+  }
+  25% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #01a4ef;
+  }
+  75% {
+    background-color: #01a4ef;
+  }
+  100% {
+    background-color: #01a4ef;
+  }
+}
+
+
+@keyframes s2 {
+  0% {
+    background-color: #01a4ef;
+  }
+  25% {
+    background-color: #01a4ef;
+  }
+  50% {
+    background-color: #fff;
+  }
+  75% {
+    background-color: #01a4ef;
+  }
+  100% {
+    background-color: #01a4ef;
+  }
+
+}
+
+@keyframes s3{
+  0% {
+    background-color: #01a4ef;
+  }
+  25% {
+    background-color: #01a4ef;
+  }
+  50% {
+    background-color: #01a4ef;
+  }
+  75% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #01a4ef;
+  }
+}
+
+	@keyframes s4 {
+  0% {
+    background-color: #fff;
+  }
+  10% {
+    background-color: #01a4ef;
+  }
+  50% {
+    background-color: #01a4ef;
+  }
+  74% {
+    background-color: #01a4ef;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square1"></div>
+        <div class="square2"></div>
+        <div class="square3"></div>
+        <div class="square4"></div>
+    </div> 
+</body>
+</html>

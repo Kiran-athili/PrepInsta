@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .demo{
+            width: 400px;
+            height: 100px;
+            background-color: lightcoral;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        } */
+        /* @keyframes example{ */
+            /* from{background-color: lightblue;}
+            to{background-color: lightgreen;} */
+            /* 0%{background-color: lightcoral;}
+            25%{background-color: lightgreen;}
+            50%{background-color: lightblue;}
+            75%{background-color: lightslategrey;}
+            100%{background-color: yellow;}
+        } */
+        div{
+            width: 90px;
+            height: 70px;
+            background-color: lightcoral;
+            animation-name: example;
+            animation-duration: 5s;
+        }
+        @keyframes example{ 
+
+            0%{margin-left:0;}
+            /* 10%{margin-left: 20px; transform: rotate(0deg); background-color: lightseagreen;}  */
+            50%{margin-left: 1400px; background-color: lightseagreen; transform: rotate(360deg);}
+            100%{transform:rotate(0deg);}
+        } 
+    </style>
+</head>
+<body>
+    <h1>Animation in CSS</h1>
+    <div class="demo"></div>
+</body>
+</html>

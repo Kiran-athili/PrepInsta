@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-box {
+  height: 20px;
+  width: 200px;
+  background: lightgrey;
+  overflow: hidden;
+  border: 0.5px solid black;
+  display: flex;
+  margin-top: 20px;
+}
+
+.loader-pill {
+  height: 20px;
+  width: 100%;
+  background: rgb(22, 134, 204);
+}
+
+.loading .loader-pill {
+  animation: loader-pill 1s linear infinite;
+}
+
+.loader-pill-int {
+  height: 20px;
+  width: 100%;
+  background: rgb(22, 134, 204);
+}
+
+.loading .loader-pill-int {
+  animation: loader-pill-int 1s linear infinite;
+}
+
+@keyframes loader-pill {
+  0% {
+    transform: translate(0);
+  }
+  
+  100% {
+    transform: translate(500px);
+  }
+}
+
+@keyframes loader-pill-int {
+  0% {
+    transform: translate(-200%);
+  }
+  
+  80% {
+    transform: translate(-200%);
+  }
+  
+  100% {
+    transform: translate(-100%)
+  }
+} 
+</style>
+</head>
+<body>
+    <div class="container">
+      <div class="loader-box loading">
+        <div class="loader-pill"></div>
+        <div class="loader-pill-int"></div>
+      </div>
+      </div>
+</body>
+</html>

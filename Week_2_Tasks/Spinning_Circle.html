@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:330px;
+	border:1px dotted #fff;
+}.circle {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border: 20px solid;
+	border-color:white rgb(22, 134, 204) rgb(22, 134, 204) ;
+	border-radius: 100px;
+	animation: circle 1s linear infinite;
+}
+@keyframes circle{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

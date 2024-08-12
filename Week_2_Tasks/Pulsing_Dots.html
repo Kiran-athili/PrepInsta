@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.box{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dot div{
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	width:20px;
+	height:20px;
+	margin:auto;
+	border-radius:20px;
+	background: rgb(22, 134, 204);
+	transform:scale(0);
+	animation:dot 1s linear infinite;
+}
+.dot div:nth-child(1) {
+	left: -50px;
+	animation-delay:-0.2s;
+}
+.dot div:nth-child(3) {
+	right: -50px;
+	animation-delay:0.2s;
+}
+
+
+@keyframes dot{
+	0%{
+		transform: scale(0);
+	}
+	50%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0);
+	}
+}
+    </style>
+</head>
+<body>
+    <div class="box dot">
+        <div></div>
+        <div></div>
+        <div></div>	
+        <div></div>
+    </div>
+</body>
+</html>

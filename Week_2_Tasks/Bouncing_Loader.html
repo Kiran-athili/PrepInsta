@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+.container {
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 300px;
+}
+.ball {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(22, 134, 204);
+  margin:  5px;
+}
+
+.ball-1 {
+  animation: ballBounce 1.0s infinite alternate-reverse;
+}
+.ball-2 {
+  animation: ballBounce 1.15s  infinite alternate-reverse;
+}
+.ball-3 {
+  animation: ballBounce 1.2s  infinite alternate-reverse;
+}
+
+
+@keyframes ballBounce {
+  from {}
+  to {transform: translateY(-50px);}
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball ball-1"></div>
+        <div class="ball ball-2"></div>
+        <div class="ball ball-3"></div>
+    </div>
+</body>
+</html>
